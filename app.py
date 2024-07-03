@@ -24,5 +24,5 @@ gender = 0 if gender == "Female" else 1
 
 # Make prediction
 if st.button("Predict"):
-    predicted_status = predict_status(age, weight, height, gender, other_feature)
+    predicted_status = predict_status(age, weight, height, gender)
     st.success(f"The predicted status of the child is: {predicted_status}")
